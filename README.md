@@ -37,3 +37,8 @@ pip install pandas
 source venv/bin/activate
 python app.py datas.csv
 ```
+
+``` txt
+{<TypeEnum.PATTERN_A: 'PATTERN_A'>: [{'a': 'hoge', 'b': 'piyo', 'b.1': 1, 'c': 'fuga'}, {'a': 'aaa', 'b': 'bb', 'b.1': 2, 'c': 'ccc'}], <TypeEnum.PATTERN_B: 'PATTERN_B'>: [{'a': 'hoge', 'a.1': 1, 'b': 'piyo', 'c': 'fuga', 'c.1': 2}]}
+
+```

@@ -57,7 +57,7 @@ class FakeCsvReaderController():
         """
         return_dict = {}
         for e in TypeEnum:
-            with tempfile.NamedTemporaryFile(delete_on_close=False) as fp:
+            with tempfile.NamedTemporaryFile() as fp:
                 # 一時ファイル(CSV)作成
                 with open(fp.name, 'w') as file:
                     file.write(self.origin_format[e.name]["header"] + '\n')
